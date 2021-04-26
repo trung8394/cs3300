@@ -1,24 +1,13 @@
 <p id="notice"><%= notice %></p>
+<% provide(:page_title, @project.title) %>
+<% provide(:projects_active, 'active') %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @project.body %>
-</p>
-
-<p>
-  <strong>Slug:</strong>
-  <%= @project.slug %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Back', projects_path %> | 
+<%= link_to 'Edit', edit_project_path(@project) %>
+<div class="row">
+  <div class= "col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
+    <h1><%= @project.title %></h1>
+    <p>April 25, 2021</p>
+    <%= @project.body %>
+  </div>
+</div>
