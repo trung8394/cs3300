@@ -31,6 +31,7 @@ gem 'bootstrap', '~> 5.0.0.beta3'
 gem 'jquery-rails'
 gem 'friendly_id', '~> 5.4.0'
 gem 'mini_racer'
+gem 'devise'
 
 # Use ActiveStorage variant
 group :production do

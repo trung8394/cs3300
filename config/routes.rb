@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  root "blog/projects#index"
+  devise_for :authors
+  root to: "blog/projects#index"
 
   # url expect .../author/projects/...
-  namespace :author do
+  namespace :authors do
     resources :projects
   end
 

@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
-<% provide(:page_title, @projects.title) %>
+<% provide(:page_title, @project.title) %>
 <% provide(:projects_active, 'active') %>
 
 <%= link_to 'Back', projects_path %>
 <div class="row">
   <div class= "col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
-    <h1><%= @projects.title %></h1>
-    <p><%= @projects.display_day_published %></p>
-    <%= @projects.body %>
+    <h1><%= @project.title %></h1>
+    <p><%= @project.display_day_published %></p>
+    <%= @project.body %>
   </div>
 </div>
