@@ -1,0 +1,6 @@
+<tr>
+    <td><%= link_to project.title, author_project_path(project) %></td>
+    <td></td>
+    <td><%= link_to 'Edit', edit_author_project_path(project), class: 'btn btn-sm btn-warning' %></td>
+    <td><%= link_to 'Remove', author_project_path(project), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %></td>
+</tr>
