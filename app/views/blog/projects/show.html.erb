@@ -7,6 +7,7 @@
   <div class= "col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
     <h1><%= @project.title %></h1>
     <p><%= @project.display_day_published %></p>
+    <p><%= "Author: #{@project.author.name}" %></p>
     <%= @project.body %>
   </div>
 </div>

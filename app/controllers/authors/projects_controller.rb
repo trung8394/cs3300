@@ -9,6 +9,7 @@ module Authors
       
         # GET /projects/1 or /projects/1.json
         def show
+          @project = current_author.friendly.find(params[:id])
         end
       
         # GET /projects/new
