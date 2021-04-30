@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe ProjectsController, type: :controller do
+RSpec.describe BlogController, type: :controller do
   context "GET #index" do
     it "returns a success response" do
       get :index
