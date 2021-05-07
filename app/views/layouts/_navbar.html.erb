@@ -19,9 +19,9 @@
             <%= link_to "Logout (#{current_author.name})", destroy_author_session_path, method: :delete, class: "nav-link" %>
           </li>
         <% else %>
-          </li class="list-group-item">
-            <%= link_to 'Login', author_session_path, class: "nav-link" %>
-          </li>
+        </li class="list-group-item">
+          <%= link_to 'Login', author_session_path, class: "nav-link" %>
+        </li>
         <% end %>
 
       </ul>
@@ -55,9 +55,9 @@
           <%= link_to "Logout (#{current_author.name})",  destroy_author_session_path, method: :delete, class: "nav-link" %>
         </li>
       <% else %>
-        </li class="nav-item">
-          <%= link_to 'Login', author_session_path, class: "nav-link" %>
-        </li>
+      </li class="nav-item">
+        <%= link_to 'Login', author_session_path, class: "nav-link" %>
+      </li>
       <% end %>
 
     </ul>
