@@ -2,6 +2,10 @@ require 'test_helper'
 
 class ProjectsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    sign_in authors(:regular)
+  end
+
+  setup do
     @project = projects(:one)
   end
 
@@ -11,7 +15,7 @@ class ProjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get new_project_url
+    get new_projects_url
     assert_response :success
   end
 

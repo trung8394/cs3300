@@ -1,5 +1,6 @@
 module Authors
 class ProjectsController < AuthorController
+  before_action :authenticate_author!
   before_action :set_project, only: %i[ show edit update destroy ]
 
   # GET /projects or /projects.json
