@@ -4,6 +4,6 @@
 <h1>Editing Project</h1>
 
 <%= render 'form', project: @project, url: authors_project_url(@project) %>
-
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', authors_projects_path %>
+<p></p>
+<%= link_to 'Show', @project, class: 'btn btn-primary btn-sm' %> |
+<%= link_to 'Back', authors_projects_path, class: 'btn btn-primary btn-sm' %>

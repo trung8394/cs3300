@@ -2,7 +2,7 @@
 <% provide(:page_title, @project.title) %>
 <% provide(:projects_active, 'active') %>
 
-<%= link_to 'Back', projects_path %>
+<%= link_to 'Return', projects_path, class: 'btn btn-primary' %>
 <div class="row">
   <div class= "col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
     <h1><%= @project.title %></h1>
