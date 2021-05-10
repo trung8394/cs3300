@@ -5,7 +5,7 @@
             <h4 class="card-title"><%= link_to project.title, project %></h4>
             <p class="published-date"><%= project.display_day_published %></p>
             <p class="card-text"><%= truncate(project.description, length: 130) %></p>
-            <%= link_to 'Read', project, class: 'btn btn-read' %>
+            <%= link_to 'Read More', project, class: 'btn btn-secondary' %>
         </div>
     </div>
 </div>

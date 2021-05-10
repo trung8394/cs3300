@@ -1,6 +1,17 @@
-<tr>
-    <th><%= link_to project.title, authors_project_path(project) %></th>
-    <td><%= truncate(project.description, length: 100) %></td>
-    <td><%= link_to 'Edit', edit_authors_project_path(project), class: 'btn btn-sm btn-warning' %></td>
-    <td><%= link_to 'Remove', authors_project_path(project), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %></td>
-</tr>
+<table style="width: 100%">
+<colgroup>
+<col span="1" style="width: 20%;">
+<col span="1" style="width: 60%;">
+<col span="1" style="width: 10%;">
+<col span="1" style="width: 10%;">
+</colgroup>
+
+<div >
+    <tr>
+        <th><%= link_to project.title, authors_project_path(project), class: 'btn btn-secondary' %></th>
+        <td><%= truncate(project.description, length: 100) %></td>
+        <td><%= link_to 'Edit Project', edit_authors_project_path(project), class: 'btn btn-sm btn-warning' %></td>
+        <td><%= link_to 'Remove Project', authors_project_path(project), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %></td>
+        <p></p>
+    </tr>
+</div>

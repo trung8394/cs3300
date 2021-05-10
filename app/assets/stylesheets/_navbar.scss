@@ -3,10 +3,18 @@
     margin-bottom: 20px;
     background-color: black;
     $primary-color: white;
-    $primary-color-text: grey;
+    $primary-color-text: lightgray;
     $primary-color-light: white;
     $accent-color: white;
     .navbar-brand {
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+
         font-weight: bolder;
         color: $accent-color;
         .light {
@@ -18,6 +26,8 @@
         outline: none;
     }
     .nav-link {
+        display: block;
+        padding: .5rem 1rem;
       color: $primary-color-light !important;
       &.active {
         color: $primary-color-text !important;
